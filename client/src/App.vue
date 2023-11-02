@@ -1,36 +1,28 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue';
-
 </script>
 
 <template>
   <header>
-
-    <NavBar/>
-    
+    <NavBar />
   </header>
 
-  <body>
-    <div class="container">
-      <RouterView />
-    </div>
-  </body>
+  <div class="container">
+    <RouterView />
+  </div>
+
 </template>
 
 <style scoped>
   body {
-    font-family: Helvetica, sans-serif;
-  }
-
-  .wrapper {
-    text-align: center;
+    background-color: azure;
   }
 
   .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    min-height: 100vh;
   }
 </style>
-```
